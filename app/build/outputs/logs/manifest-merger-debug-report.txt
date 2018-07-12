@@ -1,73 +1,138 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:2:1-36:12
+ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:2:1-34:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\37cb06040bdeddc536266262f43e2aa9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\055369763eef0028f0425900413f5e5e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\a0047bfb9f05890f9e80b59b7f475234\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\c95ec6ba13bbfa39675bc61796f6c7f7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\99d65c07576b9b72158be09931601dd8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\45414631c0a65d7080edf19e52975e29\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\fa1d3b2d9544af0a56251dc4770bc4d6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\dfdfdda2ba5387d446d692de23dabeb1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\767509410620d0ad91602dafe675b610\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\826831d87c79392ccff662305383bf56\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\410dcd7362c10989c58a9d2b8d8cc5db\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\70593d0a1310b4a6017b404e7d694eab\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\635a37192f3bad78defcd2ea82972d23\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\df38433cd57bc655b80feb97cfa8b6d0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\027b9fbb8c2f553f1196ff51ea9dc38a\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:2:1-34:12
 	package
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:3:5-37
-		INJECTED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml
-		INJECTED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:3:5-34
+		INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:5:5-30
-		INJECTED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml
-		INJECTED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml
-	android:versionCode
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:4:5-28
-		INJECTED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml
-		INJECTED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.CAMERA
-ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:7:5-65
+ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:8:5-65
 	android:name
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:7:22-62
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:8:22-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:8:5-81
+ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:8:22-78
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:9:22-78
 uses-feature#android.hardware.camera
-ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:10:5-60
+ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:11:5-60
 	android:name
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:10:19-57
-uses-feature#android.hardware.camera.autofocus
-ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:11:5-70
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:11:19-57
+uses-feature#android.hardware.project.autofocus
+ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:12:5-71
 	android:name
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:11:19-67
-uses-sdk
-ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:13:5-15:41
-	android:targetSdkVersion
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:15:9-38
-		INJECTED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml
-		INJECTED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml
-	android:minSdkVersion
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:14:9-34
-		INJECTED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml
-		INJECTED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:12:19-68
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:14:5-75
+	android:name
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:14:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:15:5-80
+	android:name
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:15:22-77
 application
-ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:17:5-34:19
+ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:17:5-32:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\a0047bfb9f05890f9e80b59b7f475234\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\a0047bfb9f05890f9e80b59b7f475234\AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:20:9-41
-	android:allowBackup
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:18:9-35
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:20:9-41
 	android:icon
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:19:9-45
-activity#com.camera.surfaceview.CamActivity
-ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:21:9-29:20
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:19:9-45
+	android:allowBackup
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:18:9-35
+activity#com.project.disease.ShowPhotoActivity
+ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:21:9-23:48
 	android:label
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:23:13-45
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:23:13-45
 	android:name
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:22:13-62
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:24:13-28:29
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:22:13-65
+activity#com.project.disease.HostActivity
+ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:24:9-31:20
+	android:screenOrientation
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:25:13-49
+	android:name
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:24:19-66
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
-ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:25:17-69
+ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:25:25-66
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:27:17-77
+ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:27:27-74
-activity#com.camera.surfaceview.ShowPhotoActivity
-ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:31:9-33:57
-	android:label
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:33:13-45
-	android:name
-		ADDED from /home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/src/main/AndroidManifest.xml:32:13-68
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:29:27-74
+uses-sdk
+INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\37cb06040bdeddc536266262f43e2aa9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\37cb06040bdeddc536266262f43e2aa9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\055369763eef0028f0425900413f5e5e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\055369763eef0028f0425900413f5e5e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\a0047bfb9f05890f9e80b59b7f475234\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\a0047bfb9f05890f9e80b59b7f475234\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\c95ec6ba13bbfa39675bc61796f6c7f7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\c95ec6ba13bbfa39675bc61796f6c7f7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\99d65c07576b9b72158be09931601dd8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\99d65c07576b9b72158be09931601dd8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\45414631c0a65d7080edf19e52975e29\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\45414631c0a65d7080edf19e52975e29\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\fa1d3b2d9544af0a56251dc4770bc4d6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\fa1d3b2d9544af0a56251dc4770bc4d6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\dfdfdda2ba5387d446d692de23dabeb1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\dfdfdda2ba5387d446d692de23dabeb1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\767509410620d0ad91602dafe675b610\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\767509410620d0ad91602dafe675b610\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\826831d87c79392ccff662305383bf56\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\826831d87c79392ccff662305383bf56\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\410dcd7362c10989c58a9d2b8d8cc5db\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\410dcd7362c10989c58a9d2b8d8cc5db\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\70593d0a1310b4a6017b404e7d694eab\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\70593d0a1310b4a6017b404e7d694eab\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\635a37192f3bad78defcd2ea82972d23\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\635a37192f3bad78defcd2ea82972d23\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\df38433cd57bc655b80feb97cfa8b6d0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\df38433cd57bc655b80feb97cfa8b6d0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\027b9fbb8c2f553f1196ff51ea9dc38a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\027b9fbb8c2f553f1196ff51ea9dc38a\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml

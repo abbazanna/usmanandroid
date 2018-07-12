@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">AndroidSurfaceviewExample</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">Usman\'s Disease Detector</string>
     <string name="action_settings">Settings</string>
+    <string name="action_ok">ok</string>
+    <string name="action_cancel">cancel</string>
     <string name="cannot_connect_to_camera">Can no connect to Camera</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_note">Welcome to Usman\'s Disease Detector</string>
+    <string name="settings">Settings</string>
+    <string name="server_url">Server URL</string>
+
 
 </resources>

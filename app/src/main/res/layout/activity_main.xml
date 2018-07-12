@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.camera.surfaceview.AndroidSurfaceviewExample" >
+    tools:context="com.project.disease.AndroidSurfaceviewExample" >
 
     <SurfaceView
         android:id="@+id/surfaceView"
