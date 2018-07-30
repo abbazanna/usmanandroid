@@ -22,7 +22,8 @@
         android:allowBackup="true"
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" >
+        android:label="@string/app_name"
+        android:testOnly="true" >
         <activity
             android:name="com.project.disease.ShowPhotoActivity"
             android:label="@string/app_name" />
