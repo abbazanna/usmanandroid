@@ -3,12 +3,57 @@
 
     <item
         is-multidex="false"
-        jar="/home/nilax/Nilax/IDE/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jar="C:\Users\user\Downloads\gitlab\ProjectWork\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.1"
-        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
-        <dex dex="/home/nilax/Desktop/Camera Demo/SurfaceCameraDemo/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0_77d083303382724ed7acf2ede06d7ca3937050f7.jar" />
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="C:\Users\user\Downloads\gitlab\ProjectWork\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-22.2.1_b2d2ee0925d9db07a830a00992c9a86e051d1cf5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\user\Downloads\gitlab\ProjectWork\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="C:\Users\user\Downloads\gitlab\ProjectWork\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1_33942a5a440b88129f708d9cd49b0048ce68dd70.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\user\Downloads\gitlab\ProjectWork\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\user\Downloads\gitlab\ProjectWork\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.2_2e0892cb967efabb3f158788c27d535531c95c45.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\AndroidSDK\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="C:\Users\user\Downloads\gitlab\ProjectWork\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1_481436d59511fd94fecc036f695908372e6466da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\user\Downloads\gitlab\ProjectWork\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="C:\Users\user\Downloads\gitlab\ProjectWork\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-22.2.1_f3679345f5f1b32d6423735bd7ca6f7ff89d1413.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\AndroidSDK\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\user\Downloads\gitlab\ProjectWork\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_1f0e5f55254382bcd34e852d64c16d4ff7453991.jar" />
     </item>
 
 </items>
