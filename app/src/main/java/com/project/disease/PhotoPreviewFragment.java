@@ -1,9 +1,11 @@
 package com.project.disease;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,26 +13,17 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-
-import org.apache.http.params.HttpParams;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import org.apache.http.entity.mime.MultipartEntityBuilder;
-import org.apache.http.entity.mime.HttpMultipartMode;
-import org.apache.http.util.EntityUtils;
-
-
 import java.io.ByteArrayInputStream;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.Set;
+
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -47,15 +40,9 @@ public class PhotoPreviewFragment extends Fragment{
 
     // TODO: Rename and change types of parameters
     private String path;
-    private ImageView iPhotoPreview;
-    private Button btnOk;
-    private Button btnCancel;
-    //private SimpleMultiPartRequest smr;
-    private final String twoHyphens = "--";
-    private final String lineEnd = "\r\n";
-    private final String boundary = "apiclient-" + System.currentTimeMillis();
-    private final String mimeType = "multipart/form-data;boundary=" + boundary;
-    private byte[] multipartBody;
+   // private final String boundary = "apiclient-" + System.currentTimeMillis();
+   // private final String mimeType = "multipart/form-data;boundary=" + boundary;
+   // private byte[] multipartBody;
 
     private OnFragmentInteractionListener mListener;
 
@@ -92,56 +79,54 @@ public class PhotoPreviewFragment extends Fragment{
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_photo_preview, container, false);
+        String url = getActivity().getSharedPreferences(SettingsFragment.PREFS_NAME,Context.MODE_PRIVATE).getString(SettingsFragment.URL_KEY,null);
 
-        iPhotoPreview = (ImageView)view.findViewById(R.id.photoPreview);
+        ImageView iPhotoPreview = (ImageView) view.findViewById(R.id.photoPreview);
         iPhotoPreview.setImageURI(Uri.parse(path));
-        btnOk = (Button)view.findViewById(R.id.btnOk);
+        final Button btnOk = (Button) view.findViewById(R.id.btnOk);
         btnOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                try {
-                    URL url = new URL(getActivity().getSharedPreferences(SettingsFragment.PREFS_NAME,Context.MODE_PRIVATE).getString(SettingsFragment.URL_KEY,null));
-                    HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+                btnOk.setBackgroundColor(0xFF00FF);
+                Toast.makeText(getActivity().getApplicationContext(),"clicked",Toast.LENGTH_SHORT).show();
+               File myimageFile = new File(path);
+                RequestBody requestBody = RequestBody.create(MediaType.parse("image/*"),myimageFile);
+                MultipartBody.Part fileToUpload = MultipartBody.Part.createFormData("img",myimageFile.getName(),requestBody);
+                RequestBody filename = RequestBody.create(MediaType.parse("text/plain"),myimageFile.getName());
 
-                    InputStream istream = urlConnection.getInputStream();
-                    OutputStream ustream = urlConnection.getOutputStream();
-                    MultipartEntityBuilder entityBuilder = MultipartEntityBuilder.create();
-                    entityBuilder.addBinaryBody("img",new File(path));
-                    entityBuilder.build().writeTo(ustream);
-
-
-                } catch (MalformedURLException e1) {
-                    e1.printStackTrace();
-                } catch (IOException e1) {
-                    e1.printStackTrace();
-                }
-
-
-               /* smr = new SimpleMultiPartRequest(Request.Method.POST, getActivity().getSharedPreferences(SettingsFragment.PREFS_NAME,Context.MODE_PRIVATE).getString(SettingsFragment.URL_KEY,null), new Response.Listener<String>() {
+                ImageRequestApi getResponse = RetrofitInstance.
+                        getRetrofit(getActivity().getSharedPreferences(SettingsFragment.PREFS_NAME,Context.MODE_PRIVATE).getString(SettingsFragment.URL_KEY,null))
+                        .create(ImageRequestApi.class);
+                Call<ImageListRequestResponse> call =getResponse.uploadFile(fileToUpload,filename);
+                Toast.makeText(getActivity().getApplicationContext(),"loading",Toast.LENGTH_SHORT).show();
+                call.enqueue(new Callback<ImageListRequestResponse>() {
                     @Override
-                    public void onResponse(String response) {
-                        try {
-                            JSONObject jsonObject = new JSONObject(response);
-                            Toast.makeText(getActivity(),response,Toast.LENGTH_LONG).show();
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                            Toast.makeText(getActivity(),"Error has occurred",Toast.LENGTH_LONG);
+                    public void onResponse(Call<ImageListRequestResponse> call, Response<ImageListRequestResponse> response) {
+                        ImageListRequestResponse serverResponse = response.body();
+                        Toast.makeText(getActivity(),"Response",Toast.LENGTH_SHORT);
+                        if (serverResponse != null) {
+                            for (ImageListRequestResponse.ImageInfo imageInfo:serverResponse.getImageInfos()
+                                 ) {
+                                Toast.makeText(getActivity(),imageInfo.id,Toast.LENGTH_SHORT);
+                            }
+                        } else {
+                            Toast.makeText(getActivity(),"null",Toast.LENGTH_SHORT).show();
+                            assert serverResponse != null;
+                            Log.v("Response", serverResponse.toString());
+
                         }
                     }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
 
+                    @Override
+                    public void onFailure(Call<ImageListRequestResponse> call, Throwable t) {
+                        t.printStackTrace();
                     }
                 });
-                smr.addFile("img",path);
-                RequestQueue mRequestQueue = Volley.newRequestQueue(getActivity().getApplicationContext());
-                mRequestQueue.add(smr);*/
             }
         });
 
 
-        btnCancel = (Button)view.findViewById(R.id.btnCancel);
+        Button btnCancel = (Button) view.findViewById(R.id.btnCancel);
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -177,7 +162,9 @@ public class PhotoPreviewFragment extends Fragment{
     }
 
     private void buildPart(DataOutputStream dataOutputStream, byte[] fileData, String fileName) throws IOException {
-        dataOutputStream.writeBytes(twoHyphens + boundary + lineEnd);
+        String lineEnd = "\r\n";
+        String twoHyphens = "--";
+        //dataOutputStream.writeBytes(twoHyphens + boundary + lineEnd);
         dataOutputStream.writeBytes("Content-Disposition: form-data; name=\"img\"; filename=\""
                 + fileName + "\"" + lineEnd);
         dataOutputStream.writeBytes(lineEnd);
