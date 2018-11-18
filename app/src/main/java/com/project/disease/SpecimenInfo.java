@@ -8,6 +8,7 @@ import android.graphics.Bitmap;
 
 public class SpecimenInfo {
     String Id, Name,Url;
+    int index;
     Bitmap imageBitmap;
 
     public Bitmap getImageBitmap() {
@@ -24,6 +25,14 @@ public class SpecimenInfo {
 
     public void setId(String id) {
         Id = id;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
     }
 
     public String getName() {

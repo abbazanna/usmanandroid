@@ -2,6 +2,7 @@ package com.project.disease;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
@@ -81,22 +82,22 @@ public class PhotoPreviewFragment extends Fragment{
         View view= inflater.inflate(R.layout.fragment_photo_preview, container, false);
         String url = getActivity().getSharedPreferences(SettingsFragment.PREFS_NAME,Context.MODE_PRIVATE).getString(SettingsFragment.URL_KEY,null);
 
-        ImageView iPhotoPreview = (ImageView) view.findViewById(R.id.photoPreview);
+        final ImageView iPhotoPreview = (ImageView) view.findViewById(R.id.photoPreview);
         iPhotoPreview.setImageURI(Uri.parse(path));
+
         final Button btnOk = (Button) view.findViewById(R.id.btnOk);
         btnOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 btnOk.setBackgroundColor(0xFF00FF);
                 Toast.makeText(getActivity().getApplicationContext(),"clicked",Toast.LENGTH_SHORT).show();
-               File myimageFile = new File(path);
+
+                File myimageFile = new File(path);
                 RequestBody requestBody = RequestBody.create(MediaType.parse("image/*"),myimageFile);
                 MultipartBody.Part fileToUpload = MultipartBody.Part.createFormData("img",myimageFile.getName(),requestBody);
                 RequestBody filename = RequestBody.create(MediaType.parse("text/plain"),myimageFile.getName());
 
-                ImageRequestApi getResponse = RetrofitInstance.
-                        getRetrofit(getActivity().getSharedPreferences(SettingsFragment.PREFS_NAME,Context.MODE_PRIVATE).getString(SettingsFragment.URL_KEY,null))
-                        .create(ImageRequestApi.class);
+                ImageRequestApi getResponse = ImageRequestInstance.getInstance(getActivity());
                 Call<ImageListRequestResponse> call =getResponse.uploadFile(fileToUpload,filename);
                 Toast.makeText(getActivity().getApplicationContext(),"loading",Toast.LENGTH_SHORT).show();
                 call.enqueue(new Callback<ImageListRequestResponse>() {
@@ -105,10 +106,24 @@ public class PhotoPreviewFragment extends Fragment{
                         ImageListRequestResponse serverResponse = response.body();
                         Toast.makeText(getActivity(),"Response",Toast.LENGTH_SHORT);
                         if (serverResponse != null) {
-                            for (ImageListRequestResponse.ImageInfo imageInfo:serverResponse.getImageInfos()
+                            SpecimenList specimenList = new SpecimenList();
+
+                            Toast.makeText(getActivity(),"Response Receiver",Toast.LENGTH_SHORT).show();
+                            for (ImageListRequestResponse.ImageInfo img:serverResponse.getImageInfos()
                                  ) {
-                                Toast.makeText(getActivity(),imageInfo.id,Toast.LENGTH_SHORT);
+
+                                SpecimenInfo specimen = new SpecimenInfo();
+                                specimen.setId(img.getId());
+                                specimen.setIndex(img.getIndex());
+                                specimen.setUrl(img.getUrl());
+                                specimen.setName("Segment "+ img.getIndex());
+                                specimenList.add(specimen);
+
+                                Toast.makeText(getActivity(),specimen.getId(),Toast.LENGTH_SHORT).show();
                             }
+                            Fragment frag = SelectionFragment.newInstance(3,specimenList);
+                            getFragmentManager().beginTransaction().replace(R.id.fragmentholder,frag).addToBackStack("photoPreview").commit();
+
                         } else {
                             Toast.makeText(getActivity(),"null",Toast.LENGTH_SHORT).show();
                             assert serverResponse != null;
@@ -120,6 +135,7 @@ public class PhotoPreviewFragment extends Fragment{
                     @Override
                     public void onFailure(Call<ImageListRequestResponse> call, Throwable t) {
                         t.printStackTrace();
+                        Toast.makeText(getActivity(),"Failed",Toast.LENGTH_SHORT).show();
                     }
                 });
             }

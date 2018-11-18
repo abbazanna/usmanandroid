@@ -7,8 +7,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.theartofdev.edmodo.cropper.CropImageView;
+
+import java.io.File;
 
 
 /**
@@ -37,9 +40,11 @@ public class CropFragment extends Fragment {
      * @return A new instance of fragment cropFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static CropFragment newInstance(Uri uri) {
+    public static CropFragment newInstance(File file) {
+        Uri uri;
         CropFragment fragment = new CropFragment();
         Bundle args = new Bundle();
+        uri = Uri.fromFile(file);
         args.putString(ARG_PATH,uri.toString());
         fragment.setArguments(args);
         return fragment;
@@ -49,7 +54,7 @@ public class CropFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            pathUri = Uri.parse((ARG_PATH));
+           // Toast.makeText(getActivity(),getArguments().getString(ARG_PATH),Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -59,7 +64,10 @@ public class CropFragment extends Fragment {
         // Inflate the layout for this fragment
         fragmentView = inflater.inflate(R.layout.fragment_crop, container, false);
         CropImageView cropImageView = fragmentView.findViewById(R.id.cropImageView);
-        cropImageView.setImageUriAsync(pathUri);
+        pathUri = Uri.parse(getArguments().getString(ARG_PATH));
+        Toast.makeText(getActivity(),pathUri.toString(),Toast.LENGTH_SHORT).show();
+        
+        //cropImageView.setImageUriAsync(pathUri);
 
         return fragmentView;
     }

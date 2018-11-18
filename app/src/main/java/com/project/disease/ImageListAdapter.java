@@ -1,5 +1,7 @@
 package com.project.disease;
 
+import android.app.Activity;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +10,13 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 /**
  * Created by abbazanna on 2/4/2018.
@@ -16,11 +24,12 @@ import java.util.List;
 
 public class ImageListAdapter extends RecyclerView.Adapter<ImageListAdapter.ViewHolder>{
     private List<SpecimenInfo> specimenInfoList;
+    private SpecimenClickedListener specimenClickedListener;
 
-    public ImageListAdapter(List<SpecimenInfo> specimenInfoList) {
+    public ImageListAdapter(List<SpecimenInfo> specimenInfoList, SpecimenClickedListener specimenClickedListener) {
         this.specimenInfoList = specimenInfoList;
+        this.specimenClickedListener = specimenClickedListener;
     }
-
 
     /**
      * Called when RecyclerView needs a new {@link ViewHolder} of the given type to represent
@@ -69,10 +78,17 @@ public class ImageListAdapter extends RecyclerView.Adapter<ImageListAdapter.View
      * @param position The position of the item within the adapter's data set.
      */
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.specimen = specimenInfoList.get(position);
-        holder.imageView.setImageBitmap(holder.specimen.imageBitmap);
+        holder.imageView.setImageURI(Uri.parse(holder.specimen.getUrl()));
+        Picasso.get().load(holder.specimen.getUrl()).into(holder.imageView);
         holder.textView.setText(holder.specimen.getName());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                specimenClickedListener.specimenClick(holder.specimen);
+            }
+        });
     }
 
     /**
@@ -85,6 +101,8 @@ public class ImageListAdapter extends RecyclerView.Adapter<ImageListAdapter.View
         return specimenInfoList.size();
     }
 
+
+
     class ViewHolder extends RecyclerView.ViewHolder{
         public final View mView;
         public final ImageView imageView;
@@ -96,7 +114,6 @@ public class ImageListAdapter extends RecyclerView.Adapter<ImageListAdapter.View
             imageView = mView.findViewById(R.id.image_id);
             imageView.setAdjustViewBounds(true);
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-
             textView = mView.findViewById(R.id.text_id);
         }
     }

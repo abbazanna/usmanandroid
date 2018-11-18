@@ -12,14 +12,8 @@
             android:id="@+id/resultImage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:scaleType="fitXY" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/resultImage"
-            android:text="Image Result" />
     </RelativeLayout>
 </FrameLayout>

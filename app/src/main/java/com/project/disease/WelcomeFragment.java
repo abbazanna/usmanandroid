@@ -1,6 +1,7 @@
 package com.project.disease;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Camera;
 import android.net.Uri;
 import android.os.Bundle;
@@ -74,6 +75,16 @@ public class WelcomeFragment extends Fragment {
             public void onClick(View view) {
                 CameraFragment cameraFragment = CameraFragment.newInstance();
                 getFragmentManager().beginTransaction().replace(container.getId(),cameraFragment).addToBackStack(null).commit();
+            }
+        });
+        ImageButton btnGallery = (ImageButton)view.findViewById(R.id.btnpStorage);
+        btnGallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent  intent =new Intent();
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                intent.setType("image/*");
+                getActivity().startActivityForResult(intent,HostActivity.REQUEST_MEDIA);
             }
         });
         return view;
