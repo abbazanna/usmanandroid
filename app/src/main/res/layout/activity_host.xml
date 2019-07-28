@@ -8,5 +8,6 @@
     <FrameLayout
         android:id="@+id/fragmentholder"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:background="@color/pink"/>
 </android.support.constraint.ConstraintLayout>

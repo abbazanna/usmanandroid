@@ -12,13 +12,13 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitInstance{
 
 
-    static Retrofit getRetrofit(String hostname){
+    static Retrofit getRetrofit(String hostname,String port){
         final OkHttpClient okHttpClient = new OkHttpClient.Builder()
-                .readTimeout(60, TimeUnit.SECONDS)
-                .connectTimeout(60, TimeUnit.SECONDS)
+                .readTimeout(120, TimeUnit.SECONDS)
+                .connectTimeout(120, TimeUnit.SECONDS)
                 .build();
         try {
-            URI uri = new URI("http",null,hostname,8084,"/Server/",null,null);
+            URI uri = new URI("http",null,hostname,Integer.parseInt(port),"/Server/",null,null);
             return new Retrofit.Builder().baseUrl(uri.toString()).addConverterFactory(GsonConverterFactory.create()).client(okHttpClient)
                     .build();
         } catch (URISyntaxException e) {

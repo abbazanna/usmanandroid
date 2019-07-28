@@ -9,6 +9,8 @@ MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\user\.gradle\c
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.7.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\android-image-cropper-2.7.0.aar\148418950a49664ef5cf7bf189977cf1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\32210e736228d36c6ff171e1e4ddd79b\AndroidManifest.xml:17:1-22:12
 MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\715d7098cc44a1604208537f5ac7f052\AndroidManifest.xml:2:1-14:12
+MERGED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:2:1-24:12
+MERGED from [com.camerakit:jpegkit:0.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\jpegkit-0.1.0.aar\523ccb211c66d5c27850f958eb946f80\AndroidManifest.xml:2:1-10:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\6387f2648e945e007836e4d006855dcc\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\262a3e026aaea7f9eefb06755859ebfb\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\9e5a124de969e3ab9ef40c08ab184aa5\AndroidManifest.xml:17:1-22:12
@@ -41,14 +43,20 @@ INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidMan
 		INJECTED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.CAMERA
 ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:8:5-65
+MERGED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:7:5-65
+MERGED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:7:5-65
 	android:name
 		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:8:22-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:9:5-81
+MERGED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:9:5-81
+MERGED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:9:5-81
 	android:name
 		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:9:22-78
 uses-feature#android.hardware.camera
 ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:11:5-60
+MERGED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:11:5-13:36
+MERGED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:11:5-13:36
 	android:name
 		ADDED from C:\Users\user\Downloads\gitlab\ProjectWork\app\src\main\AndroidManifest.xml:11:19-57
 uses-feature#android.hardware.project.autofocus
@@ -135,6 +143,10 @@ MERGED from [com.android.support:support-v4:27.1.1] C:\Users\user\.gradle\caches
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\32210e736228d36c6ff171e1e4ddd79b\AndroidManifest.xml:20:5-44
 MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\715d7098cc44a1604208537f5ac7f052\AndroidManifest.xml:5:5-44
 MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\715d7098cc44a1604208537f5ac7f052\AndroidManifest.xml:5:5-44
+MERGED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:5:5-44
+MERGED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:5:5-44
+MERGED from [com.camerakit:jpegkit:0.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\jpegkit-0.1.0.aar\523ccb211c66d5c27850f958eb946f80\AndroidManifest.xml:6:5-8:41
+MERGED from [com.camerakit:jpegkit:0.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\jpegkit-0.1.0.aar\523ccb211c66d5c27850f958eb946f80\AndroidManifest.xml:6:5-8:41
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\6387f2648e945e007836e4d006855dcc\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\6387f2648e945e007836e4d006855dcc\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\262a3e026aaea7f9eefb06755859ebfb\AndroidManifest.xml:20:5-44
@@ -179,3 +191,25 @@ ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\t
 		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\715d7098cc44a1604208537f5ac7f052\AndroidManifest.xml:11:13-37
 	android:name
 		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\user\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\715d7098cc44a1604208537f5ac7f052\AndroidManifest.xml:9:13-64
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:8:5-71
+	android:name
+		ADDED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:8:22-68
+uses-feature#android.hardware.camera.front
+ADDED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:15:9-53
+uses-feature#android.hardware.camera.autofocus
+ADDED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:17:5-19:36
+	android:required
+		ADDED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:19:9-33
+	android:name
+		ADDED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:18:9-57
+uses-feature#android.hardware.microphone
+ADDED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:20:5-22:36
+	android:required
+		ADDED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:22:9-33
+	android:name
+		ADDED from [com.camerakit:camerakit:1.0.0-beta3.11] C:\Users\user\.gradle\caches\transforms-1\files-1.1\camerakit-1.0.0-beta3.11.aar\c3a0127424f8554951f48380e113ffa2\AndroidManifest.xml:21:9-51

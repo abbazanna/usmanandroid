@@ -857,7 +857,7 @@ public class CameraPreviewer extends Fragment
 //                    CropImage.activity().start(getContext(),CameraPreviewer.this);
 
                    // getFragmentManager().beginTransaction().replace(R.id.fragmentholder,fragment).addToBackStack(null).commit();
-                    PhotoPreviewFragment photoPreviewFragment = PhotoPreviewFragment.newInstance(Uri.fromFile(mFile).toString());
+                    PhotoPreviewFragment photoPreviewFragment = PhotoPreviewFragment.newInstance(Uri.fromFile(mFile).toString(),true);
                     getFragmentManager().beginTransaction().replace(R.id.fragmentholder,photoPreviewFragment).addToBackStack(null).commit();
                     Log.d(TAG, mFile.toString());
                     unlockFocus();

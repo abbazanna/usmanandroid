@@ -15,7 +15,10 @@ public class ImageRequestInstance {
 
         imageRequestApi= RetrofitInstance.getRetrofit(activity.
                 getSharedPreferences(SettingsFragment.PREFS_NAME, Context.MODE_PRIVATE).
-                getString(SettingsFragment.URL_KEY,null)).create(ImageRequestApi.class);
+                getString(SettingsFragment.URL_KEY,null),
+                activity.getSharedPreferences(SettingsFragment.PREFS_NAME, Context.MODE_PRIVATE).
+                        getString(SettingsFragment.PORT_NUMBER_KEY,null)
+        ).create(ImageRequestApi.class);
         return imageRequestApi;
     };
 }

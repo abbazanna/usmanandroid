@@ -27,6 +27,7 @@ import static android.preference.PreferenceManager.getDefaultSharedPreferences;
 public class SettingsFragment extends Fragment {
     public static final String PREFS_NAME = "settingsFile";
     public static final String URL_KEY ="URL";
+    public static final String PORT_NUMBER_KEY ="PORT_NUMBER";
 
 
     private OnFragmentInteractionListener mListener;
@@ -64,6 +65,11 @@ public class SettingsFragment extends Fragment {
         if(settings.getString(URL_KEY,null)!= null){
            etURL.setText(settings.getString(URL_KEY,null));
         }
+        final EditText etPort = (EditText)view.findViewById(R.id.etServerPort);
+        if(settings.getString(PORT_NUMBER_KEY,null)!= null){
+            etPort.setText(settings.getString(PORT_NUMBER_KEY,null));
+        }
+
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,6 +82,7 @@ public class SettingsFragment extends Fragment {
             public void onClick(View view) {
                 SharedPreferences.Editor editor = settings.edit();
                 editor.putString(URL_KEY,etURL.getText().toString());
+                editor.putString(PORT_NUMBER_KEY,etPort.getText().toString());
                 editor.commit();
                 Toast.makeText(getActivity(),settings.getString(URL_KEY,null),Toast.LENGTH_LONG).show();
                 getFragmentManager().popBackStack();
